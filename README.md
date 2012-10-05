@@ -1,48 +1,6 @@
-# Serenade.js for Ruby on Rails
+# Use Serenade.rb instead
 
-[Serenade.js] is a JavaScript client side MVC framework. This gem makes it
-easy to use Serenade.js with the Ruby on Rails Asset Pipeline in Rails
-3.1 and later.
-
-Add it to the assets group in your Gemfile:
-
-``` ruby
-group :assets do
-  gem 'serenade_rails'
-end
-```
-
-You can now require Serenade in your `application.js` file, or wherever
-you prefer:
-
-``` javascript
-//= require serenade
-```
-
-Serenade should now be loaded and ready. See the [Serenade README][readme] for
-examples.
-
-## Views
-
-You can also easily use views from the asset pipeline. Just use the extension
-`.serenade` on your views, for example, place something like this in
-`app/assets/javascripts/test.serenade`:
-
-```
-h1 "Hello world"
-```
-
-Now you can render this view:
-
-``` javascript
-document.appendChild(Serenade.render('test'));
-```
-
-Couldn't be simpler!
-
-If the path to your view starts with `views`, that initial part is stripped
-off, so you could have placed the above view in
-`app/assets/javascripts/views/test.serenade` without changing the code.
+This gem has been deprecated, please use [serenade.rb](https://github.com/elabs/serenade.rb) instead.
 
 ## License
 
